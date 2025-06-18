@@ -25,6 +25,10 @@ const angularApp = new AngularNodeAppEngine();
  * });
  * ```
  */
+app.get('/api/hello', (req, res) => {
+  res.send({ message: 'Hello from the Express API!' });
+}
+);
 
 /**
  * Serve static files from /browser
